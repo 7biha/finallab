@@ -123,6 +123,22 @@ text-align: justify;
   header a{
       display: none;
   }
+  .midsection .content{
+    left: 3em;
+    top: 6em;
+    width: 400px;
+    height: 400px;
+    background-color: lightgoldenrodyellow;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: 2px solid black;
+    border-radius: 2px;
+  }
+  p .text-menu{
+    font-size: 2px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+ 
 
 }
 
