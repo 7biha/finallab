@@ -25,21 +25,48 @@
             <img src="/img/hamburger.svg" alt="hamburger-icon">
         </nav>
     </header>
+    <h2 style="text-align: center;">New Teaching Plan</h2>
 
-    <form action="PayslipServlet" method="get">
-        Last name:    <input type="text" name="lname" id="lname"><br/>
-        First name:   <input type="text" name="fname" id="fname"><br/>
-        Middle name:  <input type="text" name="mname" id ="mname"><br/>
-        Name: <span id="result"></span>
+
+
+    <form action="tp" method="POST">
+        <div class="container">
+        Class/Subject name:    <input type="text" name="cname" id="cname"><br/>
+        <label for="cduration">Choose class duration:</label>
+        <select name="duration" id="duration">
+          <option value="30min">30 minutes</option>
+          <option value="45min">45 minutes</option>
+          <option value="1hour">1 hour</option>
+          <option value="2hour">2 hour</option>
+        </select>
+        <br><br>
+        <label for="cplatform">Choose platform used:</label>
+       <br>
+            <input type="radio" id="zoom" name="zoom" value="zoom">
+            <label for="zoom">Zoom</label><br>
+            <input type="radio" id="gm" name="gme" value="gm">
+            <label for="gm">GMeet</label><br>
+            <input type="radio" id="wb" name="wb" value="wb">
+            <label for="wb">Webex</label><br>
+            <input type="radio" id="ot" name="ot" value="ot">
+            <label for="ot">Other</label><br>
+   
         <br>
-        <input type="button" value="Submit" onClick="pr()">
+        <label for="learningobj">Learning Objective:</label> <br>
+        <textarea id="learningobj" name="learningobj" rows="4" cols="50">
+         
+        </textarea>
+        <br>
+        <label for="Summary">Learning Outcome/Summary:</label> <br>
+        <textarea id="Summary" name="Summary" rows="4" cols="50">
+         
+        </textarea>
+        <button onclick="window.print()">Print this page</button>
+       </div>
+        <!-- <input type="button" value="Submit" onClick="pr()"> -->
       </form>
 
-      <script>
-        function pr() {
-          document.getElementById("result").innerHTML = document.getElementById('fname').value + " " + document.getElementById('mname').value + " " + document.getElementById('lname').value;
-        }
-      </script>
+      
     <div class="footer">
         <p>Copyright reserved GDM</p>
     </div>
