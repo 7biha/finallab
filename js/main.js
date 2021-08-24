@@ -65,3 +65,24 @@ setInterval(changeWord, 4000);
 //     x.style.display = "block";
 //   }
 // }
+// let modal = document.querySelector(".modal");
+// let signin = document.querySelector("#signin");
+
+// signin.onclick = function(){
+//     modal.style.display = "block"
+// }
+
+// window.onclick = function(e){
+//     if (e.target == modal){
+//         modal.style.display = "none";
+//     }
+// }
+
+
+let menu = document.querySelector("#bar");
+let hidden = document.querySelector(".mobileMenu");
+
+menu.onclick = function(){
+        hidden.classList.toggle ("show");
+}
+
